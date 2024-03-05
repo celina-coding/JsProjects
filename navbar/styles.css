@@ -1,0 +1,144 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    color: hsl(209, 61%, 16%);
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+nav{
+    background-color:#fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.toggle-btn{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color:hsl(205, 78%, 60%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.toggle-btn:hover{
+    color: black;
+    transform: rotate(90deg);
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-links a{
+    color: hsl(209, 34%, 30%);
+    text-transform: capitalize;
+    font-size:1rem;
+    display: block;
+    transition: all 0.3s linear;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-links a:hover{
+    color:hsl(205, 78%, 60%);
+    padding-left: 1.5rem;
+    background-color: hsl(210, 31%, 80%);
+   
+}
+
+.social-media-links{
+    display: none;
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition:all 0.3s linear ;
+  }
+/* toggle class */
+.show-nav-links {
+    height: 11.5rem;
+} 
+
+@media screen and (min-width:800px) {
+    .nav-container{
+        display: flex;
+        align-items: center;
+        max-width: 1170px;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-header{
+        padding: 0;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .nav-links{
+        display: flex;
+        height: auto;
+    }
+    
+    .nav-links a{
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .nav-links a:hover{
+        color:hsl(205, 78%, 60%);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .social-media-links{
+        display: flex;
+        height: auto;
+    }
+
+    .social-media-links a{
+        margin: 0 0.5rem;
+        color: hsl(205, 78%, 60%);
+        transition: all 0.3s linear;
+    }
+
+    .social-media-links a:hover{
+        color:hsl(210, 31%, 80%);
+    }
+}
+

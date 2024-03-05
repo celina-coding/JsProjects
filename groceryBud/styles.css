@@ -1,0 +1,225 @@
+/*
+----------------
+Fonts
+----------------
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+----------------
+Global styles
+----------------
+*/
+
+*,
+::before,
+::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: black;
+}
+
+h3,p{
+    line-height: 1.5;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p{
+    font-size: 0.85rem;
+}
+
+.section-center{
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 35rem;
+    margin-top: 8rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-center:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grocery-form{
+    display: grid;
+    place-items: center;
+}
+
+.alert{
+    /* display: grid;
+    place-items: center; */
+    height: 1.25rem; 
+    width: 30rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.3rem;
+}
+
+.alert-succes{
+    color:#155724;
+    background-color:#d4edda;
+}
+
+.alert-danger{
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+
+
+.grocery-form .title{
+    color: hsl(205, 86%, 17%);
+    margin-bottom: 1.25rem;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+}
+
+#item{
+    color:hsl(210, 22%, 49%);
+    background-color: hsl(210, 36%, 96%) ;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border: none;
+    padding: 0.5rem;
+    flex: 1 0 auto;
+}
+
+.btn-submit{
+    background-color:hsl(205, 86%, 81%);
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    flex: 0 0 5rem;
+    border: none;
+    border-top-right-radius:0.3rem;
+    border-bottom-right-radius:0.3rem;
+    padding:0.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-size: 0.85rem;
+    border-bottom:2rem;
+}
+
+.btn-submit:hover{
+    background-color:#49a6e9;
+    color: white;
+}
+
+.grocery-container{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+    visibility: hidden; 
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.grocery-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s linear;
+    padding: 0.1rem;
+    width: 30rem;
+}
+
+.grocery-item:hover{
+    color:hsl(210, 22%, 49%);
+    background-color: hsl(210, 36%, 96%);
+}
+
+.title {
+    margin-bottom: 0;
+    color: hsl(209, 61%, 16%);
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+    margin-left: 0.3rem;
+}
+
+.edt-btn,
+.delete-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin: 0 0.15rem;
+    margin-right: 0.1rem;
+}
+
+.edt-btn{
+    color: hsl(125, 71%, 66%);
+}
+
+.delete-btn{
+    color: hsl(360, 71%, 66%);
+}
+
+.edt-btn:hover{
+    color: hsl(125, 67%, 44%);
+}
+
+.delete-btn:hover{
+    color:hsl(360, 67%, 44%);
+}
+
+.clear-btn{
+    color:hsl(360, 71%, 66%);
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s linear;
+}
+
+.clear-btn:hover{
+    color:hsl(360, 67%, 44%);
+}
+@media screen and (max-width:600px) {
+    .alert{
+        width: auto;
+        text-transform: capitalize;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 0.75rem;
+        border-radius: 0.3rem;
+    }
+    .form-control{
+        width: 20rem;
+    }
+    .grocery-list{
+        width: 20rem;
+    }
+    
+} 

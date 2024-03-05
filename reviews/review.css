@@ -1,0 +1,133 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    color: hsl(209, 61%, 16%);
+
+}
+
+h2,
+h3,
+h5{
+    letter-spacing: 0.18rem;
+    text-transform: capitalize;
+    line-height: 2;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.title{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.7rem;
+
+}
+
+.underline{
+    height: 0.35rem;
+    width: 5rem;
+    background-color: rgb(112, 153, 240);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: 620px;
+    height:80vw ;
+}  
+
+.reviews-container{
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow:  0 5px 15px rgba(114, 114, 114, 0.2);
+    transition: all 0.3s linear;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.reviews-container:hover{
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#name{
+    margin-bottom: 0.1rem;
+    font-size: 1.4rem;
+}
+
+#job{
+   color:hsl(205, 78%, 60%);
+   font-size: 0.7rem;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+}
+
+#info{
+    color:rgb(86, 105, 118);
+    line-height:1.3;
+    margin-bottom: 10px;
+}
+
+.btn-previous,
+.btn-next{
+    background-color: transparent;
+    border: none;
+    color:hsl(205, 65%, 80%); 
+    transition: all 0.3s linear;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-previous:hover,
+.btn-next:hover{
+    color:hsl(205, 78%, 60%);
+}
+
+.Surprise-btn{
+    background-color: hsl(203, 53%, 94%); 
+    color: hsl(205, 78%, 60%);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-color: hsl(205, 78%, 60%);
+    transition: all 0.3s linear;
+    
+}
+
+.Surprise-btn:hover{
+    color: black;
+    background-color: hsl(205, 78%, 60%);
+}

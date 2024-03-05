@@ -1,0 +1,79 @@
+/*
+----------------
+Fonts
+----------------
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+----------------
+Global styles
+----------------
+*/
+
+*,
+::before,
+::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: black;
+}
+
+h2{
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+
+}
+
+/*
+----------------
+Counter
+----------------
+*/
+
+main{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    text-align: center;
+}
+
+.score{
+    font-weight: bold;
+    font-size: 6rem;
+  
+}
+
+.btn{
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border-radius:10px;
+    padding: 0.4rem 0.8rem;
+    transition:all 0.3s linear ;
+    font-size: 0.9rem;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    border: none;
+    color: white;
+}
+

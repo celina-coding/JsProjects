@@ -1,0 +1,158 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    color: hsl(209, 61%, 16%);
+}
+
+h2,
+h4{
+    letter-spacing: 0.3rem;
+    text-transform: capitalize;
+    line-height:1.25;
+    margin-bottom: 0.75rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    color:hsl(210, 22%, 49%);
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 4rem;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 4rem;   
+}
+
+.title p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-img{
+    margin-bottom: 2rem;
+}
+.about-img img{
+   height: 20rem;
+   border-radius: 0.3rem;
+   object-fit: cover;
+   width: 100%;
+}
+
+.btn-container{
+    display: flex;
+    place-items: center;
+}
+
+.btn-container .btn{
+    padding:  1rem 0;
+    font-size: 1rem;
+    border-top-right-radius: 0.3rem;
+    background-color:hsl(212, 33%, 89%);
+    border: none;
+    display: block;
+    text-transform: capitalize;
+}
+
+.btn-container .btn:nth-child(2){
+    border-top-right-radius: 0rem ;
+}
+
+.section-center{
+    background-color: white;
+    border-radius: 0.4rem;
+}
+
+.btn-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+
+.btn{
+    padding:1rem 0;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn:hover:not(.active){
+    color: #49a6e9;
+    background-color:hsl(205, 100%, 96%); 
+}
+
+.btn.active{
+    background-color: white;
+}
+
+.content{
+    margin-bottom: 2.5rem ;
+}
+
+.content h4{
+    font-size: 1rem;
+}
+
+.section-center .about-info{
+    padding: 2rem 1rem;
+}
+
+
+
+@media screen and (min-width:990px) {
+
+    .section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        column-gap: 2rem;
+        /* width: 40rem; */
+    }   
+    .section-center{
+        width: 90%;
+    }
+}
+
+.content.active{
+    display: block;
+}
+
+.content{
+    display: none;
+}
+
+
+
+

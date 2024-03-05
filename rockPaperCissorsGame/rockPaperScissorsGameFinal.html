@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+    <h1>Rock Paper Scissors</h1>
+   <button onclick="playGame('Rock')" class="move-btn"><img src="img/rock-img.webp" class="move-img" ></button>
+   <button onclick="playGame('Paper')" class="move-btn"><img src="img/paper.webp" class="move-img"></button>
+   <button onclick="playGame('Scissors')" class="move-btn"><img src="img/scissors.jpg" class="move-img"></button>
+   <p class="js-result result" ></p> 
+   <p class="js-moves"></p> 
+   <p class="js-score"></p>
+   <button onclick="
+      score.losses=0;
+      score.ties=0;
+      score.wins=0;
+      updateScore();
+      " class="reset-btn" >Reset score</button>
+      <button class="auto-play-btn" onclick="
+      
+       autoPlay();
+
+      ">Auto play</button>
+
+   <script src="index.js"></script>
+
+
+
+
+    
+</body>
+</html>

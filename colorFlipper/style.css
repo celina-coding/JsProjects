@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding:0;
+
+}
+
+body{
+    background-color: rgb(217, 233, 249);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size:3rem;
+}
+
+h4{
+    font-size: 1rem;
+
+}
+
+@media screen and(min-width:800px) {
+    h1{
+        font-size:4rem;
+    }
+    
+    h4{
+        font-size: 1.2rem;
+    
+    }
+    
+}
+
+
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+/*
+=============== 
+Nav
+===============
+*/
+
+nav{
+    background-color: white;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 3rem;
+    display: grid;
+    align-items: center;
+
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+.nav-container h4{
+    color:rgb(94, 158, 222); 
+    margin-bottom: 0;
+}
+
+.nav-items{
+    display: flex;
+
+}
+
+nav a{
+    color:hsl(209, 61%, 16%); 
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+nav a:hover{
+    color: rgb(94, 158, 222);
+
+}
+
+/*
+=============== 
+Container
+===============
+*/
+
+main {
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+  }
+ 
+.container{
+    text-align: center;
+}  
+
+.container h1{
+    background-color: black;
+    color: white;
+    border-radius: 0.4rem;
+    margin-bottom: 2.5rem;
+    padding: 0.9rem;
+}
+
+.color{
+    color:rgb(94, 158, 222);
+    text-transform: uppercase;
+}
+
+.btn-click{
+    color: black;
+    background-color: transparent;
+    height: 3rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem ;
+    font-family:"Roboto", sans-serif; ;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    
+}
+
+.btn-click:hover{
+    color: white;
+    background-color: black;
+    border: none;
+}
